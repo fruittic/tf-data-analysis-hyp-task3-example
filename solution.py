@@ -9,5 +9,5 @@ def solution(x: np.array) -> bool: # Одна или две выборке на 
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     alpha = 0.1
-    z, pvalue = ztest(x, value= 500)
+    z, pvalue = ztest(x,  value=500, alternative='larger')
     return pvalue < alpha
